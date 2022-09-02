@@ -8,21 +8,24 @@
     <style>
        body {
         background-color: rgb(30, 29, 29);
+        margin: 0;
        }
         
-       .cortina1 {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        animation: cortinaAnimada 3s infinite;
+       .cortina {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        animation: cortinaAnimada 5s infinite;
+        z-index: 100;
        }
 
        @keyframes cortinaAnimada {
         0% {
-            bottom: 700px;
-        }
-        100% {
             top: 0px;
+        }
+
+        100%{
+             top: -950px;
         }
 
         
@@ -31,19 +34,35 @@
 
 
        .drEstranho{
-
+         position:absolute;
+		left:60%;
+		top:18%;
+		margin-left:-110px;
+		margin-top:-40px;
        }
 
-       .ticket {
+       
 
+       .ticket {
+          height: 90px;
+          width: 150px;
+          left:30%;
+		  top:30%;
+          position: absolute;
        }
 
     </style>
 </head>
 <body>
-    <div class="cortina1"><img class="cortina" src="cortina.png" alt=""></div>
+   
+        <div class="cortina1"><img class="cortina" src="cortina.png" alt=""></div>
     <div class="drEstranho"><img class="drEstranho" src="2-removebg.png" alt=""></div>
+    
     <div class="ticket"><img class="ticket" src="ticket.png" alt=""></div>
+
+    
+    
+    
 
 </body>
 </html>
