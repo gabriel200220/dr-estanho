@@ -7,15 +7,15 @@
     <title>Document</title>
     <style>
        body {
-        background-color: rgb(30, 29, 29);
-        margin: 0;
+        background: linear-gradient(to right, black , red);
+        
        }
         
        .cortina {
         height: 100vh;
         width: 100vw;
         position: fixed;
-        animation: cortinaAnimada 5s infinite;
+        animation: cortinaAnimada 8s infinite;
         z-index: 100;
        }
 
@@ -39,16 +39,43 @@
 		top:18%;
 		margin-left:-110px;
 		margin-top:-40px;
+        animation: drEstranhoAnimado 8s infinite;
        }
+         
+       @keyframes drEstranhoAnimado {
+        0% {
+            right: -300px;
+        }
 
+        100%{
+             right: 900px;
+        }
+
+        
+        
+       }
        
 
-       .ticket {
-          height: 90px;
-          width: 150px;
-          left:30%;
-		  top:30%;
-          position: absolute;
+      .anuncio {
+        position:absolute;
+		left:35%;
+		top:18%;
+		margin-left:-110px;
+		margin-top:-40px;
+        animation: anuncioAnimado 8s infinite;
+      }
+
+      @keyframes anuncioAnimado {
+        0% {
+            bottom: 900px;
+        }
+
+        100%{
+             bottom: 0px;
+        }
+
+        
+        
        }
 
     </style>
@@ -57,8 +84,9 @@
    
         <div class="cortina1"><img class="cortina" src="cortina.png" alt=""></div>
     <div class="drEstranho"><img class="drEstranho" src="2-removebg.png" alt=""></div>
+    <div class="anuncio"><img class="anuncio" src="doctor_strange_in_the_multiverse_of_madness_png_by_mintmovi3_ddcgeqp-fullview.png" alt=""></div>
     
-    <div class="ticket"><img class="ticket" src="ticket.png" alt=""></div>
+    
 
     
     
